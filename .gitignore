@@ -22,6 +22,5 @@ _testmain.go
 *.test
 *.prof
 *.zip
-lambda
 
 .DS_Store
