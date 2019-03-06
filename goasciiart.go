@@ -27,7 +27,7 @@ const ascii string = "MND8OZ$7I?+=~:,.."
 
 func ScaleImage(img image.Image, w int) (image.Image, int, int) {
 	sz := img.Bounds()
-	h := (sz.Max.Y * w * 10) / (sz.Max.X * 16)
+	h := (sz.Max.Y * w * 10) / (sz.Max.X * 23)
 	img = resize.Resize(uint(w), uint(h), img, resize.Lanczos3)
 	return img, w, h
 }
